@@ -1,0 +1,18 @@
+{
+  "baseUrl": "https://www.twentyideas.com",
+  "viewportWidth": 1920,
+  "viewportHeight": 1080,
+  "watchForFileChanges": false,
+  "env": {
+    "dev": {
+      "devUrlExample": "https://dev.twentyideas.com",
+      "longWait": 10000,
+      "shortWait": 1000
+    },
+    "staging": {
+      "stagingUrlExample": "https://staging.twentyideas.com",
+      "longWait": 3000,
+      "shortWait": 100
+    }
+  }
+}
