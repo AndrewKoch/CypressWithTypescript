@@ -1,3 +1,12 @@
+# Cypress with Typescript
+The is a base repo for Cypress with Typescript support.
+
+## Initial Setup
+1. Clone the repo into your directory of choice
+2. In `cypress-tests` run `npm i` to install dependencies
+3. Run any cypress command from below and Cypress will validate it's install prior to running. The targeted tests
+(or test running) will then run.
+
 ## To Run
 When Cypress initializes, it searches for compatible browsers. This includes all compatible versions! After a browser
 has been added, reinitialize the test runner or select the browser with the CLI. Cypress.io maintains this site which

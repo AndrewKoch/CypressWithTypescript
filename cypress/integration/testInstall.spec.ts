@@ -1,6 +1,6 @@
 describe('Validates this repo was properly installed', () => {
 
-    it('should be able to go to use google to find the twenty ideas website', () => {
+    it.only('should be able to go to use google to find the twenty ideas website', () => {
         cy.visit('www.google.com')
         const googleSearchClassSelector = '.gLFyf'
         cy.get(`${googleSearchClassSelector}`)
@@ -13,6 +13,10 @@ describe('Validates this repo was properly installed', () => {
         cy.get(`[href="${targetUrlSelector}"] > ${urlClassSelector}`)
             .contains('Twenty Ideas')
             .should('be.visible')
+    })
+
+    it('should not run because the above test has a .only, removing that will run the above test and this test', () => {
+        cy.visit('www.fivethirtyeight.com')
     })
 
     it.skip('should do something else but we skip this test!', () => {
